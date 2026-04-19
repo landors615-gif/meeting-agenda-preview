@@ -152,6 +152,63 @@ body {
   background: #ddd;
   border-radius: 4px;
 }
+/* === MOBILE RESPONSIVE === */
+@media screen and (max-width: 750px) {
+  .page { width: 100vw; }
+
+  /* Header: margin-top 50% of image height, image aspect 2400/1500=1.6 so height=160vw, 50%=80vw */
+  .header-overlay {
+    margin-top: 80vw;
+    padding: 0 15% 24vw;
+  }
+  .info-row {
+    font-size: 2.93vw; /* 22/750*100 */
+    line-height: 2.6;
+  }
+  .info-icon {
+    width: 4vw;
+    margin-right: 1.07vw;
+    font-size: 2.67vw;
+  }
+  .info-label {
+    min-width: 13.33vw;
+  }
+
+  /* Agenda */
+  .dot-col { width: 3.73vw; }
+  .dot {
+    width: 1.6vw;
+    height: 1.6vw;
+    border: 0.33vw solid #fff;
+    box-shadow: 0 0 0 0.27vw #1a3cba;
+    margin-top: 0.67vw;
+  }
+  .vline { width: 0.27vw; margin-top: 0.53vw; }
+  .item-body { padding: 0 0 2.67vw 1.33vw; }
+  .item-header {
+    font-size: 2.93vw;
+  }
+  .speaker {
+    font-size: 2.4vw;
+  }
+
+  /* QR Code */
+  .qrcode-overlay {
+    top: 4.8vw; /* 36/750*100 */
+  }
+  .qr-frame {
+    width: 31.53vw; /* 236.5/750*100 */
+    height: 31.53vw;
+  }
+  .qr-img {
+    width: 31.53vw;
+    height: 31.53vw;
+  }
+  .qr-placeholder {
+    width: 31.53vw;
+    height: 31.53vw;
+  }
+}
 </style>
 </head>
 <body>
