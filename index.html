@@ -27,30 +27,30 @@ body {
 }
 
 /* === HEADER overlay === */
-/* header-bg is 1500x2400, info area is roughly bottom 30% */
 .header-overlay {
   position: absolute;
-  left: 8%;
-  bottom: 8%;
-  right: 8%;
+  left: 15%;
+  right: 15%;
+  top: 50%;
+  bottom: 0;
   line-height: 1.5;
 }
 .info-row {
   display: flex;
   align-items: center;
   color: #fff;
-  font-size: 15px;
-  line-height: 2.4;
+  font-size: 22px;
+  line-height: 2.6;
 }
 .info-icon {
-  width: 24px;
+  width: 30px;
   text-align: center;
-  margin-right: 6px;
-  font-size: 13px;
+  margin-right: 8px;
+  font-size: 20px;
 }
 .info-label {
   color: rgba(255,255,255,0.85);
-  min-width: 80px;
+  min-width: 100px;
   letter-spacing: 1px;
 }
 .info-value {
@@ -59,13 +59,11 @@ body {
 }
 
 /* === AGENDA overlay === */
-/* agenda-bg is 1504x2064, white card starts ~3% from top, ~3.3% from sides */
-/* blue tab is ~60px high at 1504w scale → ~30px at 750w */
 .agenda-overlay {
   position: absolute;
-  top: 7%;   /* below the blue tab */
-  left: 7%;
-  right: 7%;
+  top: 9%;
+  left: 8%;
+  right: 8%;
   bottom: 3%;
   line-height: 1.5;
   overflow: hidden;
@@ -104,44 +102,42 @@ body {
   padding: 0 0 20px 10px;
 }
 .item-header {
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 700;
   color: #111;
   line-height: 1.6;
 }
 .speaker {
-  font-size: 13px;
+  font-size: 18px;
   color: #555;
   line-height: 1.8;
 }
 
 /* === QRCODE overlay === */
-/* qrcode-bg is 1500x838, frame center is roughly 35% from top, centered horizontally */
 .qrcode-overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 36px;
+  left: 0; right: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-bottom: 8%;
   line-height: 1.5;
 }
 .qr-frame {
-  width: 160px;
-  height: 160px;
+  width: 236.5px;
+  height: 236.5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .qr-img {
-  width: 140px;
-  height: 140px;
+  width: 236.5px;
+  height: 236.5px;
   object-fit: contain;
   border-radius: 4px;
 }
 .qr-placeholder {
-  width: 140px;
-  height: 140px;
+  width: 236.5px;
+  height: 236.5px;
   background: #ddd;
   border-radius: 4px;
 }
