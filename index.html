@@ -18,25 +18,30 @@ body {
 .section {
   position: relative;
   width: 100%;
-  line-height: 0; /* remove gap below img */
+  line-height: 0;
 }
 .section img.bg {
   display: block;
   width: 100%;
-  height: auto; /* preserve original aspect ratio, no stretch/crop */
+  height: auto;
 }
 
-/* === HEADER overlay === */
+/* === HEADER: img is absolute so section height = overlay content height === */
+/* header-bg: 1500x2400 → at 750w renders 1200px tall. 50% = 600px, 15% = 180px */
 .section.header-section {
-  max-height: 650px;
   overflow: hidden;
 }
-.header-overlay {
+.section.header-section img.bg {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  top: 50%;
-  bottom: 15%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.header-overlay {
+  position: relative;
+  margin-top: 600px;  /* 50% of rendered image height (1200px) */
+  padding: 0 15% 180px; /* left/right 15%, bottom 15% of 1200px */
   line-height: 1.5;
 }
 .info-row {
